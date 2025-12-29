@@ -5,6 +5,11 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+
+    /* background-image: url('../../images/flower-bg.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat; */
 }
 
 #evento h2 {
@@ -27,10 +32,10 @@ div.card {
     flex: 1;
     display: flex;
     flex-direction: column;
-    border: 2px solid #c78665;
+    border: 1px solid #c78665;
     padding: 30px 50px;
     text-align: left;
-    background-color: #c7866505;
+    background-color: #fff9f5;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
 }
 
