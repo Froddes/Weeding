@@ -1,0 +1,13 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+
+/* General */
+
+#root {
+  font-family: 'Alice', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 200;
+  font-style: normal;
+}

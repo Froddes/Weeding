@@ -1,0 +1,42 @@
+/* Banner */
+
+#banner {
+  background-image: url('/images/banner.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+
+  color: white;
+  letter-spacing: 0.2rem;
+}
+
+div.filter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#banner h1 {
+  font-size: 6.5rem;
+  font-weight: 300;
+  margin: 20px 0;
+}
+
+#banner p {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+#banner h3 {
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: 300;
+}

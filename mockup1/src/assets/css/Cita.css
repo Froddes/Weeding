@@ -1,0 +1,45 @@
+#cita {
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    padding: 0 200px;
+    background-image: url('../../images/cita-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#cita h2 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin: 0 0 30px 0;
+}
+
+#cita p {
+    font-size: 1.2rem;
+    font-weight: 200;
+    color: rgb(0, 0, 0, 0.5);
+    line-height: 1.5rem;
+    margin-top: 30px;
+}
+
+#cita .cita-container {
+    border: 2px solid #c78665;
+    padding: 25px 50px;
+}
+
+#cita img.quote-icon {
+    width: 30px;
+    margin-bottom: -10px;
+    vertical-align: middle;
+}
+
+#cita img.quote-icon-2 {
+    width: 30px;
+    margin-top: -10px;
+    vertical-align: middle;
+}
