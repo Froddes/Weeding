@@ -1,0 +1,90 @@
+.countdown-wrapper {
+    margin: 20px 0;
+    width: 100%;
+}
+
+.countdown-container {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Círculo base (Escritorio) */
+.countdown-unit {
+    background-color: rgba(199, 134, 101, 0.17);
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.unit-value {
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 1;
+}
+
+.unit-label {
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+
+.countdown-completed {
+    color: white;
+    font-size: 2rem;
+    font-family: 'Playfair Display', serif;
+}
+
+/* --- RESPONSIVE --- */
+
+/* Tablets */
+@media (max-width: 768px) {
+    .countdown-container {
+        gap: 12px;
+    }
+    
+    .countdown-unit {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .unit-value {
+        font-size: 2rem;
+    }
+    
+    .unit-label {
+        font-size: 0.6rem;
+    }
+}
+
+/* Móviles */
+@media (max-width: 480px) {
+    .countdown-container {
+        gap: 8px;
+    }
+
+    .countdown-unit {
+        width: 75px;
+        height: 75px;
+    }
+
+    .unit-value {
+        font-size: 1.4rem;
+    }
+
+    .unit-label {
+        font-size: 0.45rem;
+        letter-spacing: 0.5px;
+    }
+}

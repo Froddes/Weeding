@@ -40,3 +40,40 @@ div.filter {
   font-style: italic;
   font-weight: 300;
 }
+
+/* Ajustes para Tablets */
+@media (max-width: 992px) {
+    #banner h1 {
+        font-size: 4.5rem;
+    }
+}
+
+/* Ajustes para Móviles */
+@media (max-width: 768px) {
+    #banner {
+        height: 100vh;
+        letter-spacing: 0.1rem;
+    }
+
+    #banner h1 {
+        font-size: 3rem;
+        margin: 10px 0;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    #banner p {
+        font-size: 0.8rem;
+    }
+
+    #banner h3 {
+        font-size: 1.1rem;
+    }
+}
+
+/* Ajuste para móviles muy pequeños */
+@media (max-width: 480px) {
+    #banner h1 {
+        font-size: 2.5rem;
+    }
+}

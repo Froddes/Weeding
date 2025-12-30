@@ -5,41 +5,92 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-
-    padding: 0 200px;
+    padding: 60px 20px;
     background-image: url('../../images/cita-bg.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.cita-container {
+    border: 2px solid #c78665;
+    padding: 40px 60px;
+    max-width: 800px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(2px);
+    box-sizing: border-box;
+    position: relative;
+    z-index: 2;
 }
 
 #cita h2 {
     font-size: 2.5rem;
     font-weight: 300;
-    margin: 0 0 30px 0;
+    margin: 0;
+    line-height: 1.2;
 }
 
 #cita p {
     font-size: 1.2rem;
     font-weight: 200;
-    color: rgb(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.6);
     line-height: 1.5rem;
-    margin-top: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
 }
 
-#cita .cita-container {
-    border: 2px solid #c78665;
-    padding: 25px 50px;
+#cita img.quote-icon,
+#cita img.quote-icon-2 {
+    width: 35px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #cita img.quote-icon {
-    width: 30px;
-    margin-bottom: -10px;
-    vertical-align: middle;
+    margin-bottom: 20px;
 }
 
 #cita img.quote-icon-2 {
-    width: 30px;
-    margin-top: -10px;
-    vertical-align: middle;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    #cita {
+        padding: 40px 10px;
+    }
+
+    #cita .cita-container {
+        padding: 30px 20px;
+        width: 95%;
+    }
+
+    #cita h2 {
+        font-size: 1.6rem;
+    }
+
+    #cita p {
+        font-size: 1rem;
+        margin-top: 15px;
+    }
+
+    #cita img.quote-icon, 
+    #cita img.quote-icon-2 {
+        width: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    #cita h2 {
+        font-size: 1.3rem;
+    }
+    
+    #cita .cita-container {
+        border-width: 1px;
+    }
 }

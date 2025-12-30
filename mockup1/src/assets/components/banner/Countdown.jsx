@@ -1,30 +1,20 @@
 import React from 'react';
 import Countdown from 'react-countdown';
+import '../../css/Countdown.css';
 
 const DateTimeUnit = ({ value, label }) => (
-  <div style={{
-    background: '#c786652c',
-    borderRadius: '50%',
-    width: '120px',
-    height: '120px',
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    justifyContent: 'center',
-    color: 'white',
-    fontFamily: 'sans-serif'
-  }}>
-    <span style={{ fontSize: '2.5rem', fontWeight: '300' }}>{value}</span>
-    <span style={{ fontSize: '0.7rem', letterSpacing: '1px', textTransform: 'uppercase' }}>{label}</span>
+  <div className="countdown-unit">
+    <span className="unit-value">{value}</span>
+    <span className="unit-label">{label}</span>
   </div>
 );
 
 const Renderer = ({ days, hours, minutes, seconds, completed }) => {
   if (completed) {
-    return <span style={{ color: 'white', fontSize: '2rem' }}>¡Llegó el día!</span>;
+    return <span className="countdown-completed">¡Llegó el día!</span>;
   } else {
     return (
-      <div style={{ display: 'flex', gap: '15px', padding: '20px', flexWrap: 'wrap', justifyContent: 'center' }}>
+      <div className="countdown-container">
         <DateTimeUnit value={days} label="Días" />
         <DateTimeUnit value={hours} label="Horas" />
         <DateTimeUnit value={minutes} label="Minutos" />
@@ -38,7 +28,7 @@ export default function MyCountdown() {
   const target = new Date('2026-06-04T00:00:00');
 
   return (
-    <div style={{ margin: '20px 0' }}>
+    <div className="countdown-wrapper">
       <Countdown date={target} renderer={Renderer} />
     </div>
   );

@@ -1,14 +1,15 @@
-/* History */
-
 #history {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-
-    padding: 0 200px;
+    width: 100%;
+    overflow-x: hidden;
+    position: relative;
+    box-sizing: border-box;
+    padding: 60px 20px;
 }
 
 #history h2 {
@@ -20,46 +21,95 @@
 #history h3 {
     font-size: 2.5rem;
     font-weight: 300;
-    margin: 0 0 25px 0;
+    margin: 0 0 15px 0;
 }
 
 #history p {
     font-size: 1.1rem;
     font-weight: 200;
-    color: rgb(0, 0, 0, 0.5);
-    line-height: 1.5rem;
+    color: rgba(0, 0, 0, 0.6);
+    line-height: 1.6rem;
 }
 
 div.description {
-    margin: 0;
+    max-width: 800px;
+    margin-bottom: 40px;
 }
 
 div.description img {
     width: 40px;
-    margin-right: 15px;
-    margin-bottom: -10px;
-    vertical-align: middle;
+    margin-bottom: 10px;
 }
 
 div.they {
     display: flex;
     align-items: center;
     gap: 50px;
-    padding: 40px 20px;
+    padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 div.they > * {
-  flex: 1;            
-  min-width: 0;       
-  height: auto;
+    flex: 1;
+    min-width: 0;
+}
+
+div.they img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
 }
 
 div.they > :first-child {
-  text-align: right;
+    text-align: right;
 }
 
 div.they > :last-child {
-  text-align: left;
+    text-align: left;
+}
+
+@media (max-width: 1024px) {
+    #history {
+        padding: 60px 40px;
+    }
+    
+    #history h2 {
+        font-size: 2.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #history {
+        padding: 40px 15px;
+    }
+
+    div.they {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    div.they > :first-child,
+    div.they > :last-child {
+        text-align: center;
+    }
+
+    div.they img {
+        width: 80%;
+        order: -1;
+    }
+
+    #history h2 {
+        font-size: 2.2rem;
+    }
+
+    #history h3 {
+        font-size: 1.8rem;
+    }
+
+    #history p {
+        font-size: 1rem;
+    }
 }

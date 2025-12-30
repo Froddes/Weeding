@@ -1,8 +1,6 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
 
-/* General */
-
 #root {
   font-family: 'Alice', sans-serif;
   margin: 0;
@@ -10,4 +8,37 @@
   box-sizing: border-box;
   font-weight: 200;
   font-style: normal;
+}
+
+::selection {
+  background-color: #c78665; 
+  color: #ffffff;            
+}
+
+::-moz-selection {
+  background-color: #c78665;
+  color: #ffffff;
+}
+
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c78665;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a66b4e;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #c78665 transparent;
 }

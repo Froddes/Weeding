@@ -1,5 +1,4 @@
 import React from 'react';
-import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
 import './../css/Footer.css';
 
 function Footer() {
@@ -8,7 +7,6 @@ function Footer() {
   return (
     <footer className="footer-container">
       <div className="footer-content">
-       
         <h3 className="footer-title">¡Nos vemos pronto!</h3>
         
         <div className="footer-names">
