@@ -18,13 +18,14 @@ function Slider() {
   ];
 
   return (
-    <div className="slider-container" style={{ padding: '40px 0', width: '100%' }}>
+    <div className="slider-container" style={{  width: '100%' }}>
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
         spaceBetween={0}
         slidesPerView={1} // Por defecto 1 en móvil
         navigation
         pagination={{ clickable: true }}
+        speed={3000}
         autoplay={{ delay: 2000, disableOnInteraction: false }}
         loop={true} // Infinito
         breakpoints={{
@@ -43,7 +44,7 @@ function Slider() {
       >
         {fotos.map((src, index) => (
           <SwiperSlide key={index}>
-            <div style={{  overflow: 'hidden', height: '450px' }}>
+            <div style={{  overflow: 'hidden', height: '275px' }}>
               <img 
                 src={src} 
                 alt={`Alcázar ${index + 1}`} 

@@ -6,10 +6,10 @@
     align-items: center;
     text-align: center;
 
-    /* background-image: url('../../images/flower-bg.png');
-    background-size: contain;
+    background-image: url('../../images/flower-bg.png');
+    background-size: 50%;
     background-position: center;
-    background-repeat: no-repeat; */
+    background-repeat: no-repeat;
 }
 
 #evento h2 {

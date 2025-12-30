@@ -1,10 +1,9 @@
-  import React from 'react';
+import React from 'react';
 import Countdown from 'react-countdown';
 
-// Componente visual para cada círculo
 const DateTimeUnit = ({ value, label }) => (
   <div style={{
-    background: '#c786652c', // Fondo oscuro traslúcido
+    background: '#c786652c',
     borderRadius: '50%',
     width: '120px',
     height: '120px',
@@ -22,10 +21,10 @@ const DateTimeUnit = ({ value, label }) => (
 
 const Renderer = ({ days, hours, minutes, seconds, completed }) => {
   if (completed) {
-    return <span>¡Llegó el día!</span>;
+    return <span style={{ color: 'white', fontSize: '2rem' }}>¡Llegó el día!</span>;
   } else {
     return (
-      <div style={{ display: 'flex', gap: '15px', padding: '20px' }}>
+      <div style={{ display: 'flex', gap: '15px', padding: '20px', flexWrap: 'wrap', justifyContent: 'center' }}>
         <DateTimeUnit value={days} label="Días" />
         <DateTimeUnit value={hours} label="Horas" />
         <DateTimeUnit value={minutes} label="Minutos" />
@@ -36,7 +35,6 @@ const Renderer = ({ days, hours, minutes, seconds, completed }) => {
 };
 
 export default function MyCountdown() {
-  // Fecha: 4 de Junio de 2026
   const target = new Date('2026-06-04T00:00:00');
 
   return (

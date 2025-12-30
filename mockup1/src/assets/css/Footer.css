@@ -1,0 +1,78 @@
+.footer-container {
+    background-color: #ffeadd;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer-title {
+    font-size: 2.2rem;
+    color: #5d5d5d;
+    margin-bottom: 15px;
+}
+
+.footer-names {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    font-size: 1.5rem;
+    color: #c78665;
+    font-weight: 300;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+.heart-icon {
+    font-size: 0.8rem;
+    color: #c78665;
+    animation: pulse 2s infinite;
+}
+
+.footer-thanks {
+    color: #888;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.footer-socials {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.footer-socials a {
+    color: #5d5d5d;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.footer-socials a:hover {
+    color: #c78665;
+}
+
+.footer-bottom {
+    padding-top: 20px;
+    font-size: 0.8rem;
+    color: #aaa;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Animación sutil para el corazón */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+/* Ajuste móvil */
+@media (max-width: 480px) {
+    .footer-title { font-size: 1.8rem; }
+    .footer-names { font-size: 1.2rem; }
+}
