@@ -10,7 +10,7 @@ function Footer() {
         <h3 className="footer-title">¡Nos vemos pronto!</h3>
         
         <div className="footer-names">
-           <span>Laura & Fran</span>
+           <span>Mari & Fran</span>
         </div>
 
         <p className="footer-thanks">

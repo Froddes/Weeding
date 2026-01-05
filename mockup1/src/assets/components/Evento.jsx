@@ -31,8 +31,8 @@ function Evento() {
                     <div className="lugar">
                         <FaRegMap style={{ fontSize: '20px', color: '#c78665' }} />
                         <div className="content">
-                            <p>Real Alcázar de Sevilla</p>
-                            <span>Patio de Banderas, s/n <br /> 41004 Sevilla, España</span>
+                            <p>Hacienda El Roso</p>
+                            <span>41530 Moron de la Frontera, Sevilla, España</span>
                         </div>
                     </div>
                 </div>
@@ -49,8 +49,8 @@ function Evento() {
                     <div className="lugar">
                         <FaRegMap style={{ fontSize: '20px', color: '#c78665' }} />
                         <div className="content">
-                            <p>Real Alcázar de Sevilla</p>
-                            <span>Jardines del Alcázar <br /> 41004 Sevilla, España</span>
+                            <p>Hacienda El Roso</p>
+                            <span>41530 Moron de la Frontera, Sevilla, España</span>
                         </div>
                     </div>
                 </div>
@@ -62,7 +62,7 @@ function Evento() {
                 data-aos-delay="800"
             >
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3170.218552632297!2d-5.9930724!3d37.3840746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd126c1969300307%3A0x6b281f6d90a19e2c!2sReal%20Alc%C3%A1zar%20de%20Sevilla!5e0!3m2!1ses!2ses!4v1715694321000!5m2!1ses!2ses"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7557.540044458602!2d-5.459022719931461!3d37.210817590528755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd129e60f4570ea9%3A0x769724438795005!2sHacienda%20El%20Roso!5e0!3m2!1sen!2ses!4v1767605316774!5m2!1sen!2ses"
                     width="100%"
                     height="450"
                     style={{ border: 0 }}

@@ -11,10 +11,10 @@ import { Navigation, Pagination, Autoplay, EffectFade } from 'swiper/modules';
 
 function Slider() {
   const fotos = [
-    '/fotos/alcazar1.jpg',
-    '/fotos/alcazar2.jpg',
-    '/fotos/alcazar3.jpg',
-    '/fotos/alcazar4.webp'
+    '/fotos/hacienda1.jpeg',
+    '/fotos/hacienda2.jpeg',
+    '/fotos/hacienda3.jpeg',
+    '/fotos/hacienda4.jpeg'
   ];
 
   return (
@@ -25,7 +25,7 @@ function Slider() {
         slidesPerView={1} // Por defecto 1 en móvil
         navigation
         pagination={{ clickable: true }}
-        speed={3000}
+        speed={1000}
         autoplay={{ delay: 2000, disableOnInteraction: false }}
         loop={true} // Infinito
         breakpoints={{
